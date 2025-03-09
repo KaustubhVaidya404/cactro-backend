@@ -4,3 +4,4 @@ Scripts
 pyvenv.cfg
 .git
 __pychache__
+app\.env

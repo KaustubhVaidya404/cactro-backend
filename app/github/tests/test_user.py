@@ -7,13 +7,13 @@ import os
 
 import requests
 
-URL = reverse('api:get_github_data')
+URL = reverse('github:getgithubdata')
 
 class GitHubAPITestCase(TestCase):
     def test_get_github_data(self):
         """Test for getting data from github"""
-        username = "KaustubhVaidya"
-        token = os.getenv('GITHUB_ACCESS_TOKEN')
+        username = "KaustubhVaidya404"
+        token = os.environ.get('GITHUB_ACCESS_TOKEN')
 
         headers = {
             'Authorization': f'token {token}'
